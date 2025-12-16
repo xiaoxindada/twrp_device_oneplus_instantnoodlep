@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/oneplus/lemonades
+DEVICE_PATH := device/oneplus/instantnoodlep
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -228,4 +228,6 @@ TWRP_EVENT_LOGGING := false
 TWRP_INCLUDE_LOGCAT := true
 TARGET_RECOVERY_DEVICE_MODULES += debuggerd
 TW_RECOVERY_ADDITIONAL_RELINK_FILES += $(TARGET_OUT_EXECUTABLES)/debuggerd
+
+# randisk compression type
 BOARD_RAMDISK_USE_LZMA := true

@@ -26,6 +26,30 @@ load_op8t()
     resetprop "ro.product.vendor.name" "OnePlus8T"
 }
 
+load_op8pro()
+{
+    resetprop "ro.build.product" "OnePlus8Pro"
+    resetprop "ro.display.series" "OnePlus 8Pro"
+    resetprop "ro.product.device" "OnePlus8Pro"
+    resetprop "ro.product.model" "OnePlus 8Pro"
+    resetprop "ro.product.name" "OnePlus8Pro"
+    resetprop "ro.product.odm.device" "OnePlus8Pro"
+    resetprop "ro.product.odm.model" "OnePlus 8Pro"
+    resetprop "ro.product.odm.name" "OnePlus8Pro"
+    resetprop "ro.product.product.device" "OnePlus8Pro"
+    resetprop "ro.product.product.model" "OnePlus 8Pro"
+    resetprop "ro.product.product.name" "OnePlus8Pro"
+    resetprop "ro.product.system.device" "OnePlus8Pro"
+    resetprop "ro.product.system.model" "OnePlus 8Pro"
+    resetprop "ro.product.system.name" "OnePlus8Pro"
+    resetprop "ro.product.system_ext.device" "OnePlus8Pro"
+    resetprop "ro.product.system_ext.model" "OnePlus 8Pro"
+    resetprop "ro.product.system_ext.name" "OnePlus8Pro"
+    resetprop "ro.product.vendor.device" "OnePlus8Pro"
+    resetprop "ro.product.vendor.model" "OnePlus 8Pro"
+    resetprop "ro.product.vendor.name" "OnePlus8Pro"
+}
+
 load_op9r()
 {
     resetprop "ro.build.product" "OnePlus9R"
@@ -58,7 +82,7 @@ case $project in
         load_op9r
         ;;
     *)
-        load_op8t
+        load_op8pro
         ;;
 esac
 

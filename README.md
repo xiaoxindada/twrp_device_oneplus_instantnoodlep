@@ -1,4 +1,4 @@
-# Device Tree for 9R (lemonades) for TWRP
+# Device Tree for OnePlus 8 Pro (instantnoodlep) for TWRP
 
 ## Setup repo tool
 Setup repo tool from here https://source.android.com/setup/develop#installing-repo
@@ -27,7 +27,7 @@ repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifes
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="device/oneplus/lemonades" name="ApexLegend007/twrp_device_oneplus_lemonades" remote="github" revision="android-12.1" />
+  <project path="device/oneplus/instantnoodlep" name="xiaoxindada/twrp_device_oneplus_instantnoodlep" remote="github" revision="android-12.1" />
 </manifest>
 ```
 
@@ -40,14 +40,14 @@ repo sync -j$(nproc --all)
 ## To compile Recovery, execute this command:
 
 ```
-. build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; export LC_ALL=C; lunch twrp_lemonades-eng; make -j$(nproc --all) adbd recoveryimage
+. build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; export LC_ALL=C; lunch twrp_instantnoodlep-eng; make -j$(nproc --all) adbd recoveryimage
 ```
 
 ## To test it:
 
 ```
 # To temporarily boot it
-fastboot boot out/target/product/lemonades/recovery.img 
+fastboot boot out/target/product/instantnoodlep/recovery.img 
 
 # Since 9R has a separate recovery partition, you can flash the recovery with
 fastboot flash recovery recovery.img
@@ -56,7 +56,7 @@ fastboot flash recovery recovery.img
 Kernel: https://github.com/oneplusoss/android_kernel_oneplus_sm8250
 
 ##### Credits
-- The-Incognito For Recovery Trees of Oneplus 8T
+- The-Incognito For Recovery Trees of Oneplus 8 Pro
 - YumeMichi For Implementing Erofs and Other Misc
 - bigbiff for decryption
 - osm0sis for OOS Flashing support

@@ -7,6 +7,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),lemonades)
+ifeq ($(TARGET_DEVICE),instantnoodlep)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

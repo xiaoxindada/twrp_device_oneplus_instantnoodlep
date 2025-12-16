@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/oneplus/lemonades
+LOCAL_PATH := device/oneplus/instantnoodlep
 
 # define hardware platform
 PRODUCT_PLATFORM := kona
@@ -90,5 +90,5 @@ PRODUCT_PACKAGES_ENG += \
 
 #TWRP
 PRODUCT_COPY_FILES += \
-    device/oneplus/lemonades/prebuilt/systemmanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/manifest.xml \
-    device/oneplus/lemonades/prebuilt/vendormanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/manifest.xml \
+    device/oneplus/instantnoodlep/prebuilt/systemmanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/manifest.xml \
+    device/oneplus/instantnoodlep/prebuilt/vendormanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/manifest.xml \

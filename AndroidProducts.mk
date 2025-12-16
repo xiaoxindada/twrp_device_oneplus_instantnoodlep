@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_lemonades.mk
+    $(LOCAL_DIR)/twrp_instantnoodlep.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_lemonades-user \
-    twrp_lemonades-userdebug \
-    twrp_lemonades-eng
+    twrp_instantnoodlep-user \
+    twrp_instantnoodlep-userdebug \
+    twrp_instantnoodlep-eng
